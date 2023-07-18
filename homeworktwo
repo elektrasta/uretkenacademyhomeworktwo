@@ -1,0 +1,54 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class omercetinkaya : MonoBehaviour
+{
+    void Start()
+    {
+        tambolenleribul(20, 44);
+    }
+
+    void tambolenleribul(int ilksayii, int sonsayii)
+    {
+        string sayi1 = "";
+        string sayi2 = "";
+        string sayi3 = "";
+        string sayi4 = "";
+        string sayi5 = "";
+
+        for (int i = ilksayii; i <= sonsayii; i++)
+        {
+            if (i % 1 == 0)
+            {
+                sayi1 += i + ",";
+            }
+
+            if (i % 2 == 0)
+            {
+                sayi2 += i + ",";
+            }
+
+            if (i % 3 == 0)
+            {
+                sayi3 += i + ",";
+            }
+
+            if (i % 4 == 0)
+            {
+                sayi4 += i + ",";
+            }
+
+            if (i % 5 == 0)
+            {
+                sayi5 += i + ",";
+            }
+        }
+
+        Debug.Log("Bütün hepsi: " + sayi1.TrimEnd(','));
+        Debug.Log("2'ye tam bölünenler: " + sayi2.TrimEnd(','));
+        Debug.Log("3'e tam bölünenler: " + sayi3.TrimEnd(','));
+        Debug.Log("4'e tam bölünenler: " + sayi4.TrimEnd(','));
+        Debug.Log("5'e tam bölünenler: " + sayi5.TrimEnd(','));
+    }
+}
