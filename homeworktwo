@@ -52,3 +52,5 @@ public class omercetinkaya : MonoBehaviour
         Debug.Log("5'e tam bölünenler: " + sayi5.TrimEnd(','));
     }
 }
+//https://drive.google.com/file/d/16f_TZXNc_7u2LxE7H4vMO8ErBDocx6Fu/view?usp=drive_link
+//BUDA 3. HAFTA ODEVİM GOOGLE DRİVEYE YUKLEDİM BURADAN 3.HAFTA ODEVİME ULASABİLİRSİNİZ
